@@ -1,7 +1,10 @@
 <h1 align="center">Hola 👋, soy Rodrigo Abrescia</h1>
 <h3 align="center">Un estudiante de desarrollo web en Coderhouse</h3>
 
+HEAD
 - 🔭 Estoy trabajando en el proyecto **Comé Bien**
+
+1306a23 (Actualizo contenido de bootstrap y README)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
