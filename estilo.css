@@ -1,0 +1,404 @@
+/* Tipografía Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo del header */
+header {
+  background-color: #6a4c9c; /* Violeta oscuro */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative; /* Para posicionar botón hamburguesa */
+}
+
+header img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #9b6eae; /* Violeta claro */
+  border-radius: 5px;
+}
+
+/* Botón hamburguesa (oculto por defecto) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* Estilo del Main */
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main h1 {
+  font-size: 36px;
+  color: #6a4c9c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main h2 {
+  font-size: 28px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #6a4c9c;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f4f4f4;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+form button {
+  background-color: #6a4c9c;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #9b6eae;
+}
+
+footer {
+  background-color: #6a4c9c;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Redes Sociales en el Footer */
+footer .redes-sociales {
+  margin-bottom: 10px;
+}
+
+footer .redes-sociales a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .redes-sociales a:hover {
+  color: #d1c4e9; /* violeta claro para hover */
+}
+
+/* Sección "Nosotros" */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Historia */
+.historia p {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+
+/* Valores */
+.valores ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.valores ul li {
+  background-color: #f4f4f4;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 250px;
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  transition: transform 0.3s ease;
+}
+
+.valores ul li:hover {
+  transform: translateY(-5px);
+}
+
+/* Equipo */
+.equipo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.equipo .miembro {
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.equipo img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.equipo h3 {
+  font-size: 22px;
+  color: #6a4c9c;
+  margin-bottom: 5px;
+}
+
+.equipo p {
+  color: #777;
+  font-size: 14px;
+}
+
+.equipo .miembro:hover {
+  transform: translateY(-10px);
+}
+
+/* Testimonios */
+.testimonios .testimonio {
+  font-size: 18px;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.testimonios .testimonio p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* CTA - Llamado a la acción */
+.cta {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 28px;
+  color: #6a4c9c;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.cta .btn {
+  background-color: #6a4c9c;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.cta .btn:hover {
+  background-color: #9b6eae;
+}
+
+/* Mapa de Ubicación */
+#map {
+  height: 300px;
+  background-color: #e4e4e4;
+  border-radius: 8px;
+}
+
+/* Estilos de los productos */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.producto {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.producto img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.producto p {
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+.espaciador {
+  flex-grow: 1;
+}
+
+/* Botón "Comprar" */
+.boton-comprar {
+  display: inline-block;
+  background-color: #6a4c9c;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.boton-comprar:hover {
+  background-color: #9b6eae;
+}
+
+/* Responsive: tarjetas apiladas en pantallas chicas */
+@media (max-width: 600px) {
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .producto {
+    width: 90%;
+  }
+
+  .valores ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valores ul li {
+    width: 90%;
+  }
+
+  .equipo .miembro {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background-color: #6a4c9c;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  nav.nav-visible ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

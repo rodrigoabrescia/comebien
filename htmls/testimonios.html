@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonios | ComéBien</title>
+  <link rel="stylesheet" href="../estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .testimonios-title {
+      text-align: center;
+      margin-top: 30px;
+      color: #6a4c9c;
+      font-size: 32px;
+    }
+
+    .testimonios-subtitle {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #666;
+      font-size: 18px;
+    }
+
+    .testimonios-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .testimonio-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      max-width: 90%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .testimonio-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonio-card p {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .testimonio-card .usuario {
+      font-weight: bold;
+      color: #6a4c9c;
+      margin-bottom: 5px;
+    }
+
+    .testimonio-card .ubicacion {
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="../img/logo-comebien.png" alt="Logo ComéBien" class="logo" />
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="testimonios.html" class="active">Testimonios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="testimonios-title">Lo que dicen nuestros clientes</h1>
+    <p class="testimonios-subtitle">Descubrí lo que piensan los usuarios que han probado nuestros menús saludables</p>
+    
+    <div class="testimonios-row">
+      <div class="testimonio-card">
+        <p>"Me encantan los menús de ComéBien. Son deliciosos y saludables. ¡Me siento con más energía!"</p>
+        <div class="usuario">María González</div>
+        <div class="ubicacion">Buenos Aires</div>
+      </div>
+      <div class="testimonio-card">
+        <p>"La calidad de los ingredientes es impresionante. ¡Nunca había probado algo tan sabroso y saludable!"</p>
+        <div class="usuario">Carlos López</div>
+        <div class="ubicacion">CABA</div>
+      </div>
+      <div class="testimonio-card">
+        <p>"¡ComéBien ha cambiado mi manera de alimentarme! Ideal para mantenerme en forma y saludable."</p>
+        <div class="usuario">Ana Pérez</div>
+        <div class="ubicacion">La Plata</div>
+      </div>
+    </div>
+
+    <div class="testimonios-row">
+      <div class="testimonio-card">
+        <p>"El menú sin TACC me vino genial. Ahora puedo disfrutar de las comidas sin preocuparme por mi salud."</p>
+        <div class="usuario">Pedro Martínez</div>
+        <div class="ubicacion">Rosario</div>
+      </div>
+      <div class="testimonio-card">
+        <p>"Excelente atención y opciones para todos los gustos. ¡Totalmente recomendados!"</p>
+        <div class="usuario">Lucía Ramírez</div>
+        <div class="ubicacion">Mendoza</div>
+      </div>
+      <div class="testimonio-card">
+        <p>"Mi comida favorita es la Vianda Veggie, ¡es simplemente deliciosa y llena de sabor!"</p>
+        <div class="usuario">Javier Sánchez</div>
+        <div class="ubicacion">Mar del Plata</div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="redes-sociales">
+      <a href="https://wa.me/XXXXXXXXXXX" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/tuusuario" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@tuusuario" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2025 ComéBien - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComéBien - Viandas Saludables</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Contenedor Principal (Grid) -->
+  <div class="grid-container">
+    
+    <!-- Header -->
+    <header class="grid-item header">
+      <img src="img/logo-comebien.png" alt="Logo ComéBien" class="logo">
+      
+      <!-- Botón hamburguesa -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="htmls/nosotros.html">Nosotros</a></li>
+          <li><a href="htmls/menu.html">Menú</a></li>
+          <li><a href="htmls/testimonios.html">Testimonios</a></li>
+          <li><a href="htmls/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="grid-item content">
+      <section class="intro">
+        <h1>Bienvenido a ComéBien</h1>
+        <p>Comidas caseras, sanas y listas para disfrutar.</p>
+      </section>
+
+      <section class="productos">
+        <div class="producto">
+          <img src="img/mix.jpg" alt="Vianda Mix">
+          <h3>Vianda Mix</h3>
+          <p>Combinación equilibrada para todos los gustos.</p>
+          <a href="htmls/compra.html?producto=vianda-mix" class="boton-comprar">Comprar</a>
+        </div>
+        <div class="producto">
+          <img src="img/asiaticas.png" alt="Vianda Asiática">
+          <h3>Vianda Asiática</h3>
+          <p>Sabores orientales para sorprender tu paladar.</p>
+          <a href="htmls/compra.html?producto=vianda-asiatica" class="boton-comprar">Comprar</a>
+        </div>
+        <div class="producto">
+          <img src="img/carne.jpg" alt="Vianda Full Carne">
+          <h3>Vianda Full Carne</h3>
+          <p>Perfecta para los amantes de la proteína animal.</p>
+          <a href="htmls/compra.html?producto=vianda-full-carne" class="boton-comprar">Comprar</a>
+        </div>
+        <div class="producto">
+          <img src="img/sintacc.jpg" alt="Vianda Sin TACC">
+          <h3>Vianda Sin TACC</h3>
+          <p>Apta para celíacos, sin perder sabor.</p>
+          <a href="htmls/compra.html?producto=vianda-sin-tacc" class="boton-comprar">Comprar</a>
+        </div>
+        <div class="producto">
+          <img src="img/veggie.jpg" alt="Vianda Veggie">
+          <h3>Vianda Veggie</h3>
+          <p>Fresca, saludable y llena de vegetales.</p>
+          <a href="htmls/compra.html?producto=vianda-veggie" class="boton-comprar">Comprar</a>
+        </div>
+        <div class="producto">
+          <img src="img/veganas.jpg" alt="Vianda Veganas">
+          <h3>Vianda Veganas</h3>
+          <p>Una opción deliciosa y completamente vegetal.</p>
+          <a href="htmls/compra.html?producto=vianda-veganas" class="boton-comprar">Comprar</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="grid-item footer">
+      <div class="redes-sociales">
+        <a href="https://wa.me/XXXXXXXXXXX" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/tuusuario" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/@tuusuario" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>&copy; 2025 ComéBien - Todos los derechos reservados</p>
+    </footer>
+    
+  </div> <!-- Cierre de grid-container -->
+
+  <!-- Script del menú -->
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('nav-visible');
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+      

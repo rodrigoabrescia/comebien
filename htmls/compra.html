@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finalizar Compra | ComéBien</title>
+  <link rel="stylesheet" href="../estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f6fd;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #6a4ea8;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    input, select, textarea {
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #6a4ea8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #563a91;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      color: #6a4ea8;
+      font-weight: 500;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Finalizar Compra</h1>
+    <form action="#" method="post">
+      <label for="producto">Producto</label>
+      <input type="text" id="producto" name="producto" readonly>
+
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="11 1234 5678" required>
+
+      <label for="direccion">Dirección de entrega</label>
+      <textarea id="direccion" name="direccion" rows="3" placeholder="Calle, número, ciudad..." required></textarea>
+
+      <button type="submit">Confirmar pedido</button>
+    </form>
+    <a href="../index.html" class="back-link">← Volver al inicio</a>
+  </div>
+
+  <script>
+    // Cargar producto desde la URL
+    const params = new URLSearchParams(window.location.search);
+    const producto = params.get("producto");
+    if (producto) {
+      document.getElementById("producto").value = producto.charAt(0).toUpperCase() + producto.slice(1).replaceAll("-", " ");
+    }
+  </script>
+</body>
+</html>
